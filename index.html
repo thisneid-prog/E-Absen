@@ -1701,7 +1701,8 @@
             const allRecords = getAttendances();
             const today = getTodayDateISO();
 
-            document.getElementById('today-status-badge').textContent = `Belum Absen Masuk `;
+            document.getElementById('today-status-badge').textContent = `Sudah Absen (${users.length} Guru)`;
+            
 
             const todayRecords = allRecords.filter(r => r.date === today);
             const hadirCount = todayRecords.filter(r => r.status === 'Hadir').length;
