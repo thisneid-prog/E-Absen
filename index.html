@@ -1701,7 +1701,7 @@
             const allRecords = getAttendances();
             const today = getTodayDateISO();
 
-            document.getElementById('today-status-badge').textContent = `Mode Administrator (${users.length} Guru)`;
+            document.getElementById('today-status-badge').textContent = `Belum Absen Masuk `;
 
             const todayRecords = allRecords.filter(r => r.date === today);
             const hadirCount = todayRecords.filter(r => r.status === 'Hadir').length;
